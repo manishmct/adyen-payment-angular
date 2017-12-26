@@ -4,7 +4,7 @@ NPM module for Aden Payment gateway integration with Angular 2
 
 ## Embed the Checkout SDK
 
-Include our JavaScript SDK by adding the following link to the <head> section of your website:
+Include Adyen JavaScript SDK by adding the following link to the <head> section of your website:
 
 ```html
 <script type="text/javascript" src="https://checkoutshopper-test.adyen.com/checkoutshopper/assets/js/sdk/checkoutSDK.1.2.0.min.js"></script>
