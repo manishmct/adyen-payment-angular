@@ -1,0 +1,28 @@
+{
+  "name": "adyen-payment-angular",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manishmct/adyen-payment-angular.git"
+  },
+  "author": {
+    "name": "Manikandan",
+    "email": "m.manikandanmct@gmail.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/manishmct/adyen-payment-angular.git/issues"
+  },
+  "main": "adyen-payment-angular.umd.js",
+  "module": "adyen-payment-angular.js",
+  "jsnext:main": "adyen-payment-angular.js",
+  "typings": "adyen-payment-angular.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^5.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}
