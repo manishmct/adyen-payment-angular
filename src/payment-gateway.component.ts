@@ -11,10 +11,8 @@ import { PaymentGatewayService } from './payment-gateway.service'
 export class PaymentGatewayComponent implements OnInit{
   @Input() paymentUrl: any;
   @Input() paymentData: any;
+  @Input() adyenConfig:any;
   @Output() onPaymentSuccessfull = new EventEmitter();
-  sdkConfigObj = {
-    context: 'live' // change it to `live` when going live.
-  };
   checkout:any;
   constructor(public paymentsvc : PaymentGatewayService) {
    }
@@ -22,7 +20,7 @@ export class PaymentGatewayComponent implements OnInit{
     this.paymentsvc.setPaymentUrl(this.paymentUrl);
     let that = this;
     this.paymentsvc.paymentSetup(this.paymentData).subscribe(data => {
-      this.checkout = chckt.checkout(data, '.checkoutPayment', this.sdkConfigObj);
+      this.checkout = chckt.checkout(data, '.checkoutPayment', this.adyenConfig);
       chckt.hooks.beforeComplete = function(node, paymentData) {
         console.log(node);
         console.log(paymentData);
